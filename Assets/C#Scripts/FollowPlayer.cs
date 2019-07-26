@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FollowPlayer : MonoBehaviour
 {
+    public Color w = Color.white;
+    public GameObject c;
+
     private Transform player;
     public float speed = 2f;
     // Start is called before the first frame update
@@ -20,5 +24,7 @@ public class FollowPlayer : MonoBehaviour
 
         Quaternion TargetRotation = Quaternion.LookRotation(player.position - transform.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, TargetRotation, speed * Time.deltaTime);
+        w = Color.Lerp(Color.white, Color.clear, Time.time*0.2f);
+        c.GetComponent<Image>().color = w;
     }
 }
