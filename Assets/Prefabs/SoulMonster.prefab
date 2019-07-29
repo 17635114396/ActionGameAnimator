@@ -1696,9 +1696,10 @@ GameObject:
   - component: {fileID: 4525338407932772397}
   - component: {fileID: 1530533660034390700}
   - component: {fileID: 1530533660034390703}
+  - component: {fileID: -1118357840262733814}
   m_Layer: 0
   m_Name: SoulMonster
-  m_TagString: Untagged
+  m_TagString: soulmonster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1771,6 +1772,21 @@ MonoBehaviour:
   attackDistance: 0.7
   speed: 1.2
   attacktime: 2
+--- !u!114 &-1118357840262733814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357862917586394948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3590753f0ba2d9d49a2e2c0276c29869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  normalAttack: 50
+  attackDistance: 0.7
 --- !u!1 &7466793438957204561
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    public static SpawnManager _instance;
+
     public Spawn[] monsterArry;//怪物数组【孵化位置】
     public Spawn[] bossArry;//boss数组【孵化位置】
 
     //list<T> boss,列表boss，类型为T
     public List<GameObject> enemylist = new List<GameObject>();//敌人列表
     // Start is called before the first frame update
+    private void Awake()
+    {
+        _instance = this;//单例模式赋值最好在awake里面进行赋值。
+    }
     void Start()
     {
         StartCoroutine(EnemySpawn());//开始协程

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoulMonsterController : MonoBehaviour
 {
+    PlayerATKAndDamage playerAtkAD;
    
     private Transform player;
     private CharacterController cc;
@@ -16,6 +17,7 @@ public class SoulMonsterController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerAtkAD = player.GetComponent<PlayerATKAndDamage>();
         cc = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
     }
@@ -23,6 +25,10 @@ public class SoulMonsterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerAtkAD.hp <= 0) {
+            anim.SetBool("walk", false);
+            return;  
+        }
         Vector3 targetPos = player.position;
         targetPos.y = transform.position.y;
         float distance = Vector3.Distance(targetPos, transform.position);

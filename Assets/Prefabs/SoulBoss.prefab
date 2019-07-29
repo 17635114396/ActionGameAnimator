@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 9204332401311320016}
   m_Layer: 0
   m_Name: SoulBoss
-  m_TagString: Untagged
+  m_TagString: soulboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
