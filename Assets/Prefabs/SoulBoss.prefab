@@ -1926,6 +1926,7 @@ GameObject:
   - component: {fileID: 9204332401311320018}
   - component: {fileID: 9204332401311320019}
   - component: {fileID: 9204332401311320016}
+  - component: {fileID: 3143361750930301830}
   m_Layer: 0
   m_Name: SoulBoss
   m_TagString: soulboss
@@ -1998,9 +1999,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680240347268f1343bb7d883cbea49b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDistance: 1.5
+  attackDistance: 2
   speed: 0.7
   attacktime: 3
+--- !u!114 &3143361750930301830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204332401311320017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bee5af6f18bd1499b78197c897e177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 400
+  normalAttack: 70
+  attackDistance: 2
 --- !u!1 &9204332401316616570
 GameObject:
   m_ObjectHideFlags: 0
