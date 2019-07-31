@@ -6,6 +6,7 @@ TagManager:
   tags:
   - soulboss
   - soulmonster
+  - ground
   layers:
   - Default
   - TransparentFX

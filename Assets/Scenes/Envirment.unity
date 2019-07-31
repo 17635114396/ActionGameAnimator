@@ -230,6 +230,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &228240669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604188341825561731, guid: fe2be9cb6f8105e4fb5f72d322ac73ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2604188340884554070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &236918878
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +280,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 9204332401311320017, guid: dab4bacd3143ef64ba08de684fe93a96, type: 3}
+--- !u!1 &407973895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604188342058085403, guid: fe2be9cb6f8105e4fb5f72d322ac73ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2604188340884554070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &515239538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1368,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2604188340884554070}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2032172694}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bf3c2b185faebd4985770b7b9303275, type: 3}
@@ -1418,6 +1430,36 @@ MonoBehaviour:
   - {fileID: 1363315425}
   - {fileID: 236918880}
   enemylist: []
+--- !u!1 &1831397772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604188340918937048, guid: fe2be9cb6f8105e4fb5f72d322ac73ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2604188340884554070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032172694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2604188342432163932, guid: fe2be9cb6f8105e4fb5f72d322ac73ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2604188340884554070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032172700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032172694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df36f07e1de08fa41aac790c2b244f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleSword: {fileID: 407973895}
+  dualSword: {fileID: 1831397772}
+  gun: {fileID: 228240669}
+  exitTime: 10
+  dualTime: 0
+  gunTime: 0
 --- !u!1 &2143239231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854815188694880983, guid: ca6fa54b476c0344daf06758ab5000f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 7854815189194573785, guid: ca6fa54b476c0344daf06758ab5000f8,
         type: 3}

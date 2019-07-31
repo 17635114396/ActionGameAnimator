@@ -31,6 +31,7 @@ public class ATKAndDamage : MonoBehaviour
             if (this.tag == Tags.soulBoss || this.tag == Tags.soulMonster)
             {
                 SpawnManager._instance.enemylist.Remove(this.gameObject);
+                SpawnAward();
                 Destroy(this.gameObject, 1f);
                 this.GetComponent<CharacterController>().enabled = false;
             }
@@ -44,4 +45,18 @@ public class ATKAndDamage : MonoBehaviour
             GameObject.Instantiate(Resources.Load("HitMonster"), transform.position + Vector3.up, transform.rotation);
         }
     }
+    void SpawnAward() {
+        int count = Random.Range(1, 3);
+        for (int i = 0; i < count; i++)
+        {
+            int index = Random.Range(0, 2);
+            if (index == 0)
+            {
+                GameObject.Instantiate(Resources.Load("Item_dual"), transform.position + Vector3.up,Quaternion.identity);
+            }
+            else if (index == 1) {
+                GameObject.Instantiate(Resources.Load("Item_gun"), transform.position + Vector3.up, Quaternion.identity);
+            }
+        }
+    } 
 }
